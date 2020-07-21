@@ -60,13 +60,13 @@
         </div>
         <div class="product-action-buttons">
           <a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a>
-          <a href="<?= $_SERVER['BASE_URI'] ?>/catalog/product/<?= $product->getId() ?>" class="btn btn-dark btn-buy"><i
+          <a href="oshop.severinebianchi.com/<?= $_SERVER['BASE_URI'] ?>/catalog/product/<?= $product->getId() ?>" class="btn btn-dark btn-buy"><i
               class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
         </div>
         <div class="py-2">
           <p class="text-muted text-sm mb-1"><?= $product->type_name ?></p>
           <h3 class="h6 text-uppercase mb-1"><a
-              href="<?= $_SERVER['BASE_URI'] ?>/catalog/product/<?= $product->getId() ?>"
+              href="oshop.severinebianchi.com/<?= $_SERVER['BASE_URI'] ?>/catalog/product/<?= $product->getId() ?>"
               class="text-dark"><?= $product->getName() ?></a></h3><span
             class="text-muted"><?= $product->getPrice() ?></span>
         </div>

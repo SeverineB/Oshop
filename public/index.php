@@ -2,11 +2,20 @@
 
 require("../vendor/autoload.php");
 
-//dump($_SERVER);
+/* dump($_SERVER); */
 
 $page = (!empty($_GET['page'])) ? $_GET['page'] : "home";
 
 $router = new AltoRouter();
+
+/* $base_url="http://".$_SERVER['SERVER_NAME'].dirname($_SERVER["REQUEST_URI"].'?').'/'; */
+
+$host  = $_SERVER['HTTP_HOST'];
+$host_upper = strtoupper($host);
+$path   = rtrim(dirname($_SERVER['REQUEST_URI']), '/\\');
+$baseurl = "http://" . $host . $path . "/";
+
+/* dump($baseurl); */
 
 $router->setBasePath($_SERVER['BASE_URI']);
 

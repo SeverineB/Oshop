@@ -12,7 +12,9 @@
 
 <body>
   <header>
- 
+  <?php 
+  dump($_SERVER['BASE_URI']);
+?>
     <div class="top-bar">
       <div class="container-fluid">
         <div class="row d-flex align-items-center">
@@ -30,7 +32,7 @@
             <?php if(isset($_GET['page']) && !empty($_GET['page'])) : ?>
               <?php $page = $_GET['page']; ?>
             <div class="dropdown pl-3 ml-0">
-              <a id="currencyDropdown" href="<?= $_SERVER['BASE_URI'] ?>/<?=$page ?>?currency=eur" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            <a id="currencyDropdown" href="<?= $_SERVER['BASE_URI'] ?>/<?=$page ?>?currency=eur" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                 class="dropdown-toggle topbar-link">EUR</a>
               <div aria-labelledby="currencyDropdown" class="dropdown-menu dropdown-menu-right">
                 <a href="<?= $_SERVER['BASE_URI'] ?>/<?=$page ?>?currency=usd" class="dropdown-item text-sm">USD</a>

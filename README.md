@@ -8,8 +8,6 @@ Les produits sont enregistrés en base de données MySQL.
 
 ## Fabriqué avec
 
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
 * [PHP](https://www.php.net/)
 * [MySQL](https://www.mysql.com/fr/)
 * [Bootstrap](https://getbootstrap.com/) - Framework CSS

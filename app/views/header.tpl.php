@@ -13,7 +13,6 @@
 <body>
   <header>
   <?php 
-  dump($_SERVER['BASE_URI']);
 ?>
     <div class="top-bar">
       <div class="container-fluid">
